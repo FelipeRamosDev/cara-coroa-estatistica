@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste estatísca Cara ou Coroa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1>Teste de estatística CARA ou COROA</h1>
+        
+            <div class="wrap-result">
+                <div class="result hits">
+                    <h2>--%</h2>
+                    <p><span>--</span></p>
+                </div>
+                <div class="result mistakes">
+                    <h2>--%</h2>
+                    <p><span>--</span></p>
+                </div>
+            </div>
+            
+            <div class="wrap-buttons">
+                <button class="cara" onclick="play(1)">CARA</button>
+                <button class="coroa" onclick="play(0)">COROA</button>
+            </div>
+        
+            <form onsubmit="autoPlay(event)">
+                <h2>Jogada automática</h2>
+                <input type="number" value="100" />
+                <button style="background-color: #4d6367; border-radius: 5px 5px 0 0;" type="submit">Iniciar</button>
+            </form>
+            <button style="border-radius: 0 0 5px 5px;" type="button" onclick="reset()">Zerar tabela</button>
+        
+            <table id="result">
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Resultado</td>
+                        <td>Escolha</td>
+                        <td>Face</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
